@@ -744,6 +744,7 @@ def plot_cumulative_bars(fractions, bar_w=0.45, title=None, save_path=None):
  
     # Axes formatting.
     ax.set_xlim(-0.6, x_max_view + 0.6)
+    ax.set_ylim(0, 1.05)
     ax.set_xlabel("Number of fitted Gaussians (n)", fontsize=12, weight='bold', color='#736f72')
     ax.set_ylabel("Fraction", fontsize=14, weight='bold', color='#736f72')
     ax.set_xticks(np.arange(0, n + 1))
